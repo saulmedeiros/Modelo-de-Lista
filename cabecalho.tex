@@ -1,0 +1,30 @@
+%retire o ambiente tcolorbox para impressão (vai gastar menos tinta)
+\begin{tcolorbox}[colframe=corestilo, colback=polen, title=\ , arc=0mm]
+
+    \centering
+    \begin{tabular}{llllllr}
+    
+
+         \multicolumn{2}{l}{\multirow{3}{*}{\includegraphics[scale=0.07, trim= 50 50 50 50]{IF-C.png}}}
+         &
+         \multicolumn{5}{l}{\instituicao}\\
+         
+         
+         \multicolumn{2}{c}{}  & Professor: \professor
+         &
+         \multicolumn{3}{l}{}
+         &
+         Disciplina: \disciplina\\
+         
+         
+         \multicolumn{2}{l}{}
+         &
+         Aluno: \textcolor{corestilo}{\dotfill}
+         &
+         \multicolumn{4}{l}{Data: \data}\\
+        
+    
+    \end{tabular}
+    
+
+\end{tcolorbox}

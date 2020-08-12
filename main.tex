@@ -1,0 +1,202 @@
+\documentclass[a4paper, 12pt]{exam}
+\usepackage{smed}
+
+% Insira seus dados aqui.
+
+\def\instituicao{Instituto Federal de Educação, Ciência e Tecnologia do Ceará}
+\def\professor{Saulo Medeiros da Silva}
+\def\disciplina{Teoria dos Números}
+\def\data{\today}
+%-----------------------------------------------------------
+% ALGUNS ESTILOS
+%-----------------------------------------------------------
+%altere para preto (impressão) ou escolha uma cor
+%que combine com a sua instituição
+
+\definecolor{corestilo}{HTML}{037E5F}
+% 000000 preto
+% 037E5F verde
+% 800000 vinho
+% 0099ff azul
+% ff9900 laranja
+% 732673 roxo
+% ff0066 rosa
+% 006666 outro verde
+%-----------------------------------------------------------
+% CONFIGURAÇÃO DO TCOLORBOX
+%-----------------------------------------------------------
+\tcbset{
+colframe=corestilo,
+colback=corestilo!10
+}
+%-----------------------------------------------------------
+% INÍCIO DO DOCUMENTO
+%-----------------------------------------------------------
+\begin{document}
+
+\input{cabecalho}
+
+
+
+    \begin{questions}
+%-----------------------------------------------------------
+        \question
+%-----------------------------------------------------------
+            O mandato do reitor de uma universidade começará em 15 de novembro de 2005 e terá duração de exatamente 4 anos, sendo um deles bissexto. 
+
+            Nessa situação, conclui-se que o último dia do mandato desse reitor será no(a): 
+
+                \begin{choices}
+                    \choice sexta-feira.
+                    \choice sábado.
+                    \choice domingo.
+                    \choice segunda-feira.
+                    \choice terça-feira.
+                \end{choices}
+
+%-----------------------------------------------------------
+        \question
+%-----------------------------------------------------------
+            Qual é o resto da divisão de $2^{334}$ por 23?
+            
+                \begin{choices}
+                \choice 2.
+                \choice 4.
+                \choice 8.
+                \choice 16.
+                \choice 20.
+                \end{choices}
+%-----------------------------------------------------------
+        \question
+%-----------------------------------------------------------
+            A divisibilidade entre números inteiros é um conceito estudado há mais de 2000 anos e tem aplicações modernas, como na criptografia que permite codificar informações a fim de transmiti-las com segurança.
+
+
+            Nesse contexto, prove que se n é um numero inteiro positivo, então $2n^3 - 3n^2 +n $ é divisível por 6.
+
+%-----------------------------------------------------------
+        \question
+%-----------------------------------------------------------
+            Considere $n\geqslant2$ um número inteiro. Com relação ao máximo divisor comum $(mdc)$ entre $n^2-n +1$ e $n+1$, avalie as informações a seguir.
+            
+        \begin{subparts}
+            \subpart Se $n \equiv 2\pmod{3}$, então $mdc(n^2-n+1, n+1)=3$.
+            \subpart Se $n$ for par, então $mdc(n^2-n+1, n+1)=1$.
+            \subpart O resto da divisão de $n^2-n+1$ por $n+1$ é $n$.
+        \end{subparts}
+        
+            É correto afirmar-se em
+            
+                \begin{choices}
+                    \choice i, apenas.
+                    \choice ii, apenas.
+                    \choice i e iii, apenas.
+                    \choice ii e iii, apenas.
+                    \choice i, ii e iii.
+                \end{choices}
+
+%-----------------------------------------------------------
+        \question
+            Considerando $a,b$ e $c$ pertencentes ao conjunto dos números naturais e representado por $a|b$ a relação  ``a divide b", analise as proposições abaixo.
+
+            \begin{subparts}
+                \subpart Se $a|(b+c)$, então $a|b$ ou $a|c$.
+                \subpart Se $a|bc$ e $mdc(a,b)=1$, então $a|c$.
+                \subpart Se $a$ não é primo e $a|bc$, então $a|b$ ou $a|c$.
+                \subpart Se $a|b$ e $mdc(b,c)=1$ então $mdc(a,c)=1$.
+            \end{subparts}
+
+            É correto apenas o que se afirma em
+
+
+            \begin{choices}
+                \choice i.
+                \choice ii.
+                \choice i e iii.
+                \choice ii e iv.
+                \choice iii e iv.
+            \end{choices}
+%-----------------------------------------------------------
+      \question
+        Considere a sequência numérica definida por
+        
+            $$\begin{cases}
+                a_1=a,\\
+                a_{n+1}=\displaystyle\frac{4a_n}{2+a{_n}^2}, \text{para}\  n\geqslant 1
+            \end{cases}$$
+            
+        Use o principio de indução finita e mostre que $a_n=\sqrt{2}$, para todo número natural $n\geqslant 1$ e para $0<a<\sqrt{2}$, seguindo os passos indicados nos itens a seguir:
+
+
+            \begin{subparts}
+                \subpart Escreva a hipótese e a tese da propriedade a ser demonstrada; 
+                \subpart Mostre que $\displaystyle s=\frac{4a}{2+a^2}>0$ para todo $a>0$;
+                \subpart Prove que $s^2<2$, para todo $0<a<\sqrt{2}$;
+                \subpart mostre que $0<s<\sqrt{2}$;
+                \subpart Suponha que $a_n<\sqrt{2}$ e prove que $a_n+1<\sqrt{2}$;
+                \subpart Conclua a prova por indução.
+            \end{subparts}
+%-----------------------------------------------------------
+        \question
+            Os números perfeitos foram introduzidos na Grécia, antes de Cristo. Um número $n$ é dito perfeito se ele for igual a soma dos seus divisores positivos e próprios, ou seja, dos divisores positivos menores que $n$. Assim, se $2^k -1 $ é primo, $k>1$, então o inteiro positivo $n=2^{k-1}(2^k-1)$ é um número perfeito.
+
+            Com base nessas informações, avalie as informações a seguir:
+            \begin{subparts}
+                \subpart O número $2^2\cdot4^2\cdot127$ é perfeito e tem 17 divisores próprios;
+                \subpart O número 28 é um número perfeito;
+                \subpart Ao se adicionar as potências $2^0, 2^1, 2^2, 2^3, \ldots\ $ até que a soma seja igual ao décimo primeiro número primo e, em seguida, multiplicar a soma obtida pelo último termo, encontra-se um número perfeito.
+            \end{subparts}
+
+
+            É correto afirmar em
+
+            \begin{choices}
+                \choice i, apenas;
+                \choice ii, apenas;
+                \choice i e iii, apenas;
+                \choice ii e iii, apenas;
+                \choice i, ii e iii.
+            \end{choices}
+%-------------------------------------------------------------
+        \question
+            Uma equação diofantina linear nas incógnitas $x$ e $y$ é uma equação da forma $ax+by=c$ em que $a, b, c$ são inteiros, e as únicas soluções $(x_0, y_0)$ que interessam são aquelas em que $x_0, y_0 \in \mathbb{Z}$
+ 
+            Nesse contexto, considere que os ingressos de mu cinema, custam $R\$\ 9,00$ para estudantes e $R\$\ 15,00$ para o público geral, em que, certo dia, durante determinado período, a arrecadação nas bilheterias, desse cinema foi de $R\$\ 246,00$.
+
+            A partir das informações acima, faça o que se pede nos itens a seguir.
+                \begin{parts}
+                    \part Obtenha uma equação diofantina linear que modele a situação acima, indicando o significado das incógnitas.
+                    \part Quantas e quais são as soluções do problema descrito no item (a).
+                \end{parts}
+%-------------------------------------------------------------
+        \question
+            Em uma festa infantil, um grupo de 7 crianças - Ana, Beatriz, Carlos, Davi, Eduardo, Fernanda e Gabriela - reuniu-se para brincar de ``esconde-esconde", um jogo no qual uma criança é separada dos demais, que procuram locais para se esconder, sem que a escolhida as veja, pois essa tentará encontrá-las após algum tempo estabelecido previamente. Assim, era necessário escolher qual delas seria aquela que iria procurar todas as outras.
+
+            Para efetuar essa escolha, as crianças dispuseram em um círculo, na mesma ordem descrita anteriormente e, simultaneamente, mostraram um número de dedos das mãos. Os números de dedos mostrados foram somados, resultando em uma qualidade que vamos chamar de TOTAL. Ana começou a contar de 1 até  TOTAL, e, a cada número dito, apontava para uma criança da seguinte forma: 1 - Ana, 2 - Beatriz, 3 - Carlos, 4 - Davi, e assim por diante. Quando chegasse ao número TOTAL, a criança correspondente a esse número seria aquela que iria procurar as demais.
+
+            Se o número TOTAL é igual a 64, a criança designada para procurar as demais é
+
+            \begin{choices}
+                \choice Ana.
+                \choice Beatriz.
+                \choice Carlos.
+                \choice Davi.
+                \choice Eduardo.
+            \end{choices}
+%-------------------------------------------------------------
+        \question
+            Considere o conjunto $ A=\{n\in\mathbb{N}:1 \leqslant n \leqslant 2017\}=\{1,2,\ldots, 2017\}$.
+
+            O número de elementos de $A$ que são múltiplos de 4 ou 6 é igual a 
+                \begin{choices}
+                    \choice 840.
+                    \choice 756.
+                    \choice 672.
+                    \choice 168.
+                    \choice 84.
+                \end{choices}
+%-------------------------------------------------------------
+    \end{questions}
+
+\end{document}
+

@@ -1,0 +1,80 @@
+%-------------------------------------------------
+% PACOTES
+%-------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{microtype}
+\usepackage{indentfirst}
+
+%-------------------------------------------------
+% CONFIGURAÇÕES
+%-------------------------------------------------
+% MARGENS
+%-------------------------------------------------
+
+\geometry{
+    lmargin=2cm,
+    tmargin=2cm,
+    bmargin=3cm,
+    rmargin=2cm
+    }
+    
+%-------------------------------------------------
+% CORES DEFINIDAS
+%-------------------------------------------------
+
+
+\definecolor{polen}{HTML}{f5f5dc}
+
+%-------------------------------------------------
+% COR DA PÁGINA
+%-------------------------------------------------
+
+\pagecolor{polen}
+
+%-------------------------------------------------
+% TITULO DAS QUESTÕES
+%-------------------------------------------------
+% apague essa parte caso queira economizar tinta
+\qformat{{\textcolor{corestilo}{\fcolorbox{corestilo}{corestilo}{\textbf{\textcolor{white}{ \sf\textbf{{Questão}} \textbf{\thequestion}}}}}} \textcolor{corestilo}\hrulefill\vrule depth 1em width 0pt}
+
+%-------------------------------------------------
+% MULTI-ESCOLHA PERSONALIZADA
+%-------------------------------------------------
+% apague essa parte caso queira economizar tinta
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,corestilo,fill=corestilo, draw,inner sep=1pt] (char) {#1};}}
+
+
+\renewcommand\choicelabel{\circled{\thechoice}}
+
+\renewcommand\thechoice{\textcolor{white}{\sf\Alph {choice}}}%
+
+%-------------------------------------------------
+% RODAPÉ
+%-------------------------------------------------
+\lfoot{\footnotesize{\textcolor{corestilo}{\sf\MakeUppercase{\textbf{\instituicao}}}}}
+ \rfoot{\textcolor{corestilo}{\textbf{\thepage}}}
+ 
+ % para inserir cabeçalho na página use os comandos \lhead{} \rhead{} \chead{}
+%-------------------------------------------------
+\pagestyle{headandfoot}
+\renewcommand{\arraystretch}{1.2}
